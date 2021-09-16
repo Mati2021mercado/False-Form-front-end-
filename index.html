@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="div-contenedor">
+        
+        <div id="div-1">
+            
+            <div> 
+                <img src="img/imagenUsuario4.png" id="img-usuario" alt="login">
+            </div>
+
+            <div class="contenedor-animacion">
+                
+                <div class="animacion">o.o</div>
+            </div>    
+
+        </div>
+
+        <div id="div-2">
+            <p id="logueado">¡USTED SE HA LOGUEADO <br>CORRECTAMENTE!</p>
+            <p id="text-cargando">Cargando..</p>
+            <div class="loading">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="contenedor-form">
+        <h2 id="titulo">LOGIN</h2>     
+        <form id="form">
+            <input id="username" type="text" placeholder="username" required="required" maxlength="25" autocomplete="off">
+            <input id="password" type="password" placeholder="password" required="required" >
+            <input type="email" id="email" placeholder="email" required="required" autocomplete="on">
+            <input id="boton" type="submit" value="Enviar">
+            <p id="warnings"></p>
+        </form>
+        <div id="div-link-i-s">
+            <a  id="link-i-s" href="iniciarsesion.html">iniciar sesion</a>
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/codigo.js"></script>
+
+
+</body>
+</html>

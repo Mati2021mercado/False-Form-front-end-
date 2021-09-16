@@ -1,0 +1,239 @@
+html, body {
+    background: linear-gradient(70deg, rgb(218, 142, 20), rgb(102, 66, 9));
+    height: 100%;
+    width: 100%;
+}
+
+
+#div-contenedor {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 100%;
+    width: 100%;
+}
+
+#div-1 {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    
+}
+
+#div-2 {
+    
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#logueado {
+    font-weight: 500;
+    font-size: 34px;
+    text-align: center;
+    
+}
+
+#text-cargando {
+    margin-top: 28px;
+    font-size: 18.5px;
+    color: rgb(0, 0, 0);
+}
+
+.loading{
+    margin-top: 38px;
+    width: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.loading span{
+    width: 32px;
+    height: 32px;
+    background-color: red;
+    margin: 4px;
+    animation: scale 1.5s linear infinite;
+}
+
+@keyframes scale{
+    50%{
+        transform: scale(1.2);
+    }
+}
+
+.loading span:nth-child(1){
+    border-radius: 50% 50% 0 50%;
+    background-color: #22116e;
+    transform-origin: bottom right;
+}
+
+.loading span:nth-child(2){
+    border-radius: 50% 50% 50% 0;
+    background-color: rgb(8, 8, 63);
+    transform-origin: bottom left;
+    animation-delay: .5s;
+}
+
+.loading span:nth-child(3){
+    border-radius: 50% 0 50% 50%;
+    background-color: rgb(8, 8, 63);
+    transform-origin: top right;
+    animation-delay: 1.5s;
+}
+
+.loading span:nth-child(4){
+    border-radius: 0 50% 50% 50%;
+    background-color: #22116e;
+    transform-origin: top left;
+    animation-delay: 1s;
+}
+
+
+
+
+
+
+#warnings {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    color: rgb(218, 5, 5);
+    padding-top: 20px;
+}
+
+#contenedor-form {
+    position: relative;
+    background-color: rgb(8, 8, 63);
+    display: flex;
+    
+    box-shadow: 0px 0px 6px 7px rgba(0, 0, 0, 0.2);
+    
+    flex-direction: column;
+    margin-left: 50%;
+    /* margin-left:0%; cuando haga click */
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+#form {
+    width: 350px;
+
+}
+#titulo {
+    font-family: 'Anaheim', sans-serif;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+#username, #password, #email {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(218, 142, 20);
+    color: whitesmoke;
+    font-size: 100;
+    
+}
+
+::placeholder {
+    font-weight: 900;
+    font-family: 'Anaheim', sans-serif;
+    color: rgb(218, 142, 20);
+}
+
+#boton {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(218, 142, 20);
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: 'Anaheim', sans-serif;
+    font-weight: 700;
+
+
+}
+
+#div-link-i-s {    
+    margin-top: 20px;
+}
+
+
+#link-i-s {
+    text-decoration: none;
+    color:whitesmoke;
+    margin: auto;
+    font-family: 'Anaheim', sans-serif;
+    font-weight:500;
+}
+
+#img-usuario {
+    height: 250px;
+}
+
+.contenedor-animacion {
+    position: absolute;
+    height: 100%;
+    width: 48.7%;
+    
+    
+}
+
+.animacion {
+    box-shadow: -1px 1px 2px .5px rgba(0, 0, 0, 0.2);
+    background: #8e44ad;
+    color: white;
+    padding: .2rem .3rem 1rem .3rem;
+    position: absolute;
+    box-sizing: content-box;
+    border-radius: 2rem 2rem 0 0;
+    animation-name: animar;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform: scale(2.7);
+    
+  }
+  @keyframes animar{
+    0% {
+      left: 15px;
+      top: 31px;
+    }
+    25% {
+      left: 93.5%;
+      top: 31px;
+      color: #9b59b6;
+    }
+    50% {
+      top: 90.97%;
+      left: 93.5%;
+      color: white;
+    }
+    75%{
+      top: 90.97%;
+      left: 15px;
+      color: #9b59b6;
+    }
+    100% {
+      top: 31px;
+      left: 15px;
+    }
+  }

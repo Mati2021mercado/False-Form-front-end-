@@ -1,0 +1,38 @@
+body {
+    background-color: chocolate;
+}
+
+#volver, #cerrar-sesion {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 500;
+}
+
+
+#contenedor-volver, #contenedor-c-s {
+    padding: 1.8px 4px ;
+    border-radius: 5px ;
+    background-color: rgb(233, 228, 222);
+    display: inline-block;
+    margin: 15px;
+
+  }
+
+#titulo {
+    
+    padding: 40px;
+   
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: 75px;
+
+}
+
+img {
+    flex-basis: 400;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
